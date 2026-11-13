@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Page</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      line-height: 1.6;
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      color: #111;
+    }
+
+    /* Each section pairs text on the left with photos on the right */
+    .section {
+      display: flex;
+      gap: 40px;
+      align-items: flex-start;
+      margin-bottom: 50px;
+    }
+
+    .text-column {
+      flex: 2;
+    }
+
+    .image-column {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .image-column img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .caption {
+      font-size: 0.85rem;
+      color: #555;
+      margin-top: 6px;
+    }
+
+    /* Stacks nicely on phones */
+    @media (max-width: 650px) {
+      .section {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- SECTION 1 -->
+  <div class="section">
+    <div class="text-column">
+      <h1>Bankdrücken und -ziehen (hin und her)</h1>
+      <p>1. Bäuchlings auf Teppichfliese auf dem vorderen Ende der Bank legen.<br>
+         2. Die Bank in Schulterhöhe mit den Händen umgreifen und die Arme strecken.<br>
+         3. Wiederholen, bis man am hinteren Bankende anlangt, dann die Bank mit den Händen umgreifen und die Arme beugen.<br>
+         <strong>BEACHTEN!:</strong> Beine und Kopf nicht anheben, nicht ins Hohlkreuz gehen.</p>
+    </div>
+
+    <div class="image-column">
+      <div>
+        <img src="IMG_0100.JPG" alt="Photo 1">
+        <div class="caption">Beispiel 1</div>
+      </div>
+      
+      <div>
+        <img src="IMG_0102.JPG" alt="Photo 1">
+        <div class="caption">Beispiel 1</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- SECTION 2 -->
+  <div class="section">
+    <div class="text-column">
+      <h2>Bankziehen an der Schrägbank</h2>
+      <p>1. Bank in 5-10 Sprosse einhängen, bäuchlings auf Teppichfliese und Bank legen.<br>
+         2. Die Bank mit den Händen gestreckten Armen umgreifen und die Arme beugen.<br>
+         3. Wiederholen, bis man am Bankende anlangt, dann herunterrutschen.<br>
+         <strong>BEACHTEN!:</strong> Beine und Kopf nicht anheben, nicht ins Hohlkreuz gehen.<br>
+         Wenn die Übung zu leicht ist: Bank höher einhängen.</p>
+    </div>
+
+    <div class="image-column">
+      <div>
+        <img src="IMG_0109.JPG" alt="Photo 3">
+        <div class="caption">Beispiel 1</div>
+      </div>
+
+      <div>
+        <img src="IMG_0112.JPG" alt="Photo 4">
+        <div class="caption">Beispiel 2</div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
